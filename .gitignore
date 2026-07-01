@@ -1,0 +1,10 @@
+.vscode
+Results/
+Graphics/
+
+
+# Ignore all Jupyter notebooks
+*.ipynb
+
+# Optionally, ignore Jupyter notebook checkpoints (generated automatically)
+.ipynb_checkpoints/
