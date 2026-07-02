@@ -1,0 +1,44 @@
+{   
+    "experiment": "Lorenz",
+    "name": "Lorenz_new",
+    "path_to_data": "example_data/lorenz63.npy",
+    "path_to_time": "",
+    "run": 1,
+    "device": "cpu",
+    "BLAS_threads": 1,
+
+    "model": "contALRNN",
+    "observation_model": "Identity",
+    "pwl_units": 10,
+    "latent_dim": 20,
+    "pretrained_path": "",
+    "hidden_dim": 100,
+    "hidden_dims": [20],
+    "nonlinearity": "relu",
+    "init_weight": "glorot_uniform",
+ 
+    "lat_model_regularization": 0.0,
+    "A_matrix_regularization": 0.0,
+ 
+    "optimizer": "RADAM",
+    "gradient_clipping_norm": 0.0,
+    "start_lr": 1e-3,
+    "end_lr": 1e-5, 
+    "batch_size": 16,
+    "sequence_length": 200,
+    "sequence_time_delta": 1.0,
+    "teacher_forcing_interval": 16,
+
+    "epochs": 2000,
+    "batches_per_epoch": 50,
+    "saving_interval": 10,
+    "gaussian_noise_level": 0.05,
+ 
+    "plot_and_store_predictions": true,
+ 
+    "D_stsp_bins": 30,
+    "D_stsp_scaling": 0.3,
+    "PSE_smoothing": 20.0,
+    "PE_n": 20
+}
+ 
