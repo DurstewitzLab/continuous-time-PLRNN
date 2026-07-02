@@ -1,0 +1,11 @@
+{
+    "device": "cpu",
+    "path_to_data": "example_data/lorenz63.npy",
+    "path_to_time": "",
+    "sequence_time_delta": 1.0,
+    "model": "contALRNN",
+    "latent_dim": 20,
+    "pwl_units": 10,
+    "observation_model": "Identity",
+    "N": 3
+}
