@@ -113,7 +113,7 @@ end
 
 load_defaults() = load_json_f32(joinpath(pwd(), "settings", "defaults.json"))
 
-load_json_f32(path) = convert_to_Float32(JSON.parsefile(path))
+load_json_f32(path) = convert_to_Float32(JSON.parsefile(path; dicttype=Dict{String,Any}))
 
 save_model(p, st, path::String) = @save path p st
 
